@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <div class="formContainer">
+        <h1>Register</h1>
+        <p>Already have an account? <a href="#">Login here</a> Instead</p>
+        <!--  -->
+        <form action="" id="registrationForm">
+            <div class="formDetails">
+                <div class="username">
+                    <label for="username"><ion-icon class="one" name="person"></ion-icon>Username</label>
+                    <div>
+                        <input type="text" id="username" minlength="5" custommaxlength="6" required>
+                        <ion-icon class="succesCheck" name="checkmark-circle"></ion-icon>
+                        <ion-icon class="errorCheck" name="close-circle"></ion-icon>
+                    </div>
+                </div>
+                <div class="errorMessage"></div>
+                <div class="formDetails">
+                    <div class="password">
+                        <label for="password"><ion-icon class="" name="key"></ion-icon>Password</label>
+                        <div>
+                            <input name="data[password]" type="password" id="password" minlength="8" required>
+                            <ion-icon class="succesCheck" name="checkmark-circle"></ion-icon>
+                            <ion-icon class="errorCheck" name="close-circle"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="errorMessage"></div>
+                    <div class="formDetails">
+                        <div class="confirmPassword">
+                            <label for="confirmPassword"><ion-icon name="key"></ion-icon>Confirm
+                                Password</label>
+                            <div>
+                                <input name="data[confirmPassword]" type="password" id="confirmPassword"
+                                    match="password" minlength="8" required>
+                                <ion-icon class="succesCheck" class="succesCheck" name="checkmark-circle"></ion-icon>
+                                <ion-icon class="errorCheck" name="close-circle"></ion-icon>
+                            </div>
+                        </div>
+                        <div class="errorMessage"></div>
+                        <div class="formDetails">
+                            <div class="email">
+                                <label for="email"><ion-icon name="mail"></ion-icon>Email</label>
+                                <div>
+                                    <input type="text" id="email" pattern="^(.+)@(.+)$" required>
+                                    <ion-icon class="succesCheck" name="checkmark-circle"></ion-icon>
+                                    <ion-icon class="errorCheck" name="close-circle"></ion-icon>
+                                </div>
+                            </div>
+                            <div class="errorMessage"></div>
+                        </div>
+                        <button id="btn">Register</button>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

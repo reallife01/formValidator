@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+}
+
+html {
+    height: 100%;
+}
+
+
+body {
+    background-color: #ffe5d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.formContainer {
+    background: #d8e2dc;
+    margin: 5rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    backdrop-filter: blur(14.1px);
+}
+
+.formContainer h1 {
+    color: green;
+    text-shadow: 0px 5px 14px green;
+}
+
+.formContainer a {
+    color: green;
+}
+
+.formContainer h1 {
+    margin-bottom: 1rem;
+}
+
+.formContainer .username,
+.formContainer .email,
+.formContainer .password,
+.formContainer .confirmPassword {
+    margin-top: 1.5rem;
+}
+
+.formContainer label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.formContainer input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: 1.5px dashed rgb(207, 199, 199);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+input.greenBorder {
+    border: 1.5px solid green;
+}
+
+input.redBorder {
+    border: 1.5px solid red;
+}
+
+.formContainer .username>div,
+.formContainer .email>div,
+.formContainer .password>div,
+.formContainer .confirmPassword>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.succesCheck {
+    color: green;
+    font-size: 1.5rem;
+    display: none;
+}
+
+
+.errorCheck {
+    color: red;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.formContainer .errorMessage {
+    margin-top: 1rem;
+    color: red;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+.formContainer button {
+    color: blue;
+    background: #ffe5d9;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 23px;
+    -webkit-border-radius: 23px;
+    -moz-border-radius: 23px;
+    -ms-border-radius: 23px;
+    -o-border-radius: 23px;
+}
